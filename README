@@ -5,4 +5,14 @@ How to Run:
 
     python pythonapp/server/app/run.py
 
+Notes about static folder:
+    1: This demo has a SPA (Single Page Architecture), so main contents are inside 'index.html'.
+    2: All the partials are inside static/app/partials folder.
+    3: All the controllers for angular are inside static/app/js/controllers folder.
+
+Notes about server folder:
+    1: The app is run from server/run.py, and the port configurations are done here.
+    2: The requirements.txt contains the bare minimum modules which needs to be installed.
+    3: The server configurations like template/static folders are done inside server.py file.
+
 
