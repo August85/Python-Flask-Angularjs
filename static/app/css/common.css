@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+body {
+    font-family: arial;
+    color: #555;
+    font-size: 12px;
+    line-height: 14px;
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+.FIXED {
+    position: fixed;
+}
+/* close commented backslash hack */
+
+.FL-old {
+        float: left;
+        }
+
+.FL {
+    float: left;
+    padding-left: 100px;;
+    padding-top: 5px;
+}
+
+.FL-next {
+    float: right;
+    padding-top: 10px;
+}
+
+.FL-noMargin {
+    float: left;
+    /*padding-left: 100px;;*/
+    padding-top: 5px;
+}
+
+.FR {
+    float: right
+}
+
+.attrBlock {
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.FR-next {
+    float: right;
+    padding-left: 5px;
+}
+
+.label-next {
+    display: inline-block;
+    float: left;
+    clear: left;
+    text-align: right;
+    padding-top:10px;
+    padding-right: 4px;
+}
+
+.infoButtons{
+    float:left;
+    position: relative;
+    margin-right:2px;
+}
+
+.CL {
+    clear: both
+}
+
+.UC {
+    text-transform: uppercase
+}
+
+.DN {
+    display: none
+}
+
+.PR {
+    position: relative
+}
+
+.curPtr {
+    cursor: pointer;
+}
+
+.curDef {
+    cursor: default;
+}
+.TDN {
+    text-decoration: none;
+}
+.FS12 {
+    font-size: 12px
+}
+.FS11 {
+    font-size: 11px
+}
+.cBL {
+    color: #027bca;
+}
+.cGy {
+    color: #555555;
+}
+.PT3 {
+    padding-top:3px
+}
+.PT5 {
+    padding-top:5px
+}
+.PT7 {
+    padding-top:7px
+}
+.PT10 {
+    padding-top:10px
+}
+.PT15 {
+    padding-top:15px
+}
+.PT20 {
+    padding-top: 20px
+}
+
+.PB5 {
+    padding-bottom: 5px;
+}
+.PB10 {
+    padding-bottom: 10px;
+}
+.PB15 {
+    padding-bottom: 15px;
+}
+.PB20 {
+    padding-bottom: 20px;
+}
+.PB30 {
+    padding-bottom: 30px;
+}
+
+.PR5 {
+    padding-right: 5px
+}
+.PR7 {
+    padding-right: 7px
+}
+.PR10 {
+    padding-right: 10px
+}
+.PR15 {
+    padding-right: 15px;
+}
+
+.PL3 {
+    padding-left: 5px
+}
+.PL5 {
+    padding-left: 5px
+}
+.PL7 {
+    padding-left: 7px
+}
+
+.PL10 {
+    padding-left: 10px
+}
+.PL15 {
+    padding-left: 15px;
+}
+
+.ML3 {
+    margin-left: 3px;
+}
+
+.ML5 {
+    margin-left: 5px;
+}
+
+.ML10 {
+    margin-left: 10px;
+}
+.ML20 {
+    margin-left: 20px;
+}
+
+
+
+
+
+.MR10 {
+    margin-right: 10px;
+}
+
+.MR15 {
+    margin-right: 15px;
+}
+
+.MR20 {
+    margin-right: 20px;
+}
+
+.MR120 {
+    margin-right: 120px;
+}
+
+
+
+
+.MT3 {
+    margin-top: 3px;
+}
+
+.MT5 {
+    margin-top: 5px;
+}
+
+.MT7 {
+    margin-top: 7px;
+}
+
+.MT10 {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.MR1per {
+    margin-right: 1%;
+}
+
+
+.wd70pxl {
+    width: 70px
+}
+
+.wd50per {
+    width: 50%
+}
+
+.wd70per {
+    width: 70%
+}
+
+.wd100per {
+    width: 97%
+}
+
+.wd25 {
+    width: 14%
+}
+
+
+.wd15 {
+    width: 15px;
+}
+
+.wd110 {
+    width: 110px
+}
+
+.wd120 {
+    width: 120px;
+}
+.wd150 {
+    width: 150px;
+}
+.wd200 {
+    width: 200px;
+}
+
+.wd250 {
+    width: 250px
+}
+
+.wd160 {
+    width: 140px
+
+}
+
+.wd500 {
+    width: 542px;
+}
+
+.wd480 {
+    width: 542px;
+}
+
+h1 {
+    padding: 5px 0px 5px 0px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    padding-top: 4px
+}
+
+h3 {
+
+    color: #58595b;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 26px;
+}
+

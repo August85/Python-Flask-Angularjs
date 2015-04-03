@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" ng-app="Pragrammar">
+<head>
+  <meta charset="utf-8">
+  <title>Pragmatic Programmer</title>
+    <link rel="shortcut icon" type="image/png" href="../app/images/favicon.png">
+    <link rel="stylesheet" href="../app/css/tree.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/toaster.min.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/slider.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/ngdialog.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/hotkeys.css" />
+    <link type="text/css" rel="stylesheet" href="../app/css/page-styles.css"  />
+    <link type="text/css" rel="stylesheet" href="../app/css/angucomplete.css"  />
+    <link type="text/css" rel="stylesheet" href="../app/css/panel-style.css"  />
+    <link type="text/css" rel="stylesheet" href="../app/css/ng-grid.min.css"  />
+    <link type="text/css" rel="stylesheet" href="../app/css/angular-multi-select.css"  />
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/overcast/jquery-ui.css" />
+
+    <script type="text/javascript" src="../app/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/jquery.browser.js"></script>
+    <script type="text/javascript" src="../app/js/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="../app/js/lib/bootstrap-slider.js"></script>
+    <script type="text/javascript" src="../app/js/lib/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="../app/js/lib/classie.js"></script>
+    <script type="text/javascript" src="../app/js/lib/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/circle-progress.js"></script>
+    <script type="text/javascript" src="../app/js/ngmodules/angular.js"></script>
+    <script type="text/javascript" src="../app/js/ngmodules/angular-ui-router.js"></script>
+    <script type="text/javascript" src="../app/js/ngmodules/angular-route.js"></script>
+    <script type="text/javascript" src="../app/js/ngmodules/angular-resource.js"></script>
+    <script src="https://code.angularjs.org/1.2.0/angular-animate.min.js" ></script>
+    <!--<script type="text/javascript" src="../app/js/ngmodules/angular-animate.js"></script>-->
+    <script type="text/javascript" src="../app/js/lib/toaster.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/underscore.js"></script>
+    <script type="text/javascript" src="../app/js/ngmodules/restangular.js"></script>
+
+    <script type="text/javascript" src="../app/js/ngmodules/dirPagination.js"></script>
+    <script type="text/javascript" src="../app/js/lib/ngProgress.js"></script>
+    <script type="text/javascript" src="../app/js/lib/angular-ui.js"></script>
+    <script type="text/javascript" src="../app/js/lib/ngDialog.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/truncate.js"></script>
+    <script type="text/javascript" src="../app/js/lib/ng-flow-standalone.js"></script>
+    <script type="text/javascript" src="../app/js/lib/angular-touch.js"></script>
+    <script type="text/javascript" src="../app/js/lib/ng-grid-2.0.14.min.js"></script>
+    <script type="text/javascript" src="../app/js/lib/angular-multi-select.js"></script>
+
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+        rel="stylesheet"/>
+
+    <script type="text/javascript" src="../app/js/controllers/maincontroller.js"></script>
+    <script type="text/javascript" src="../app/js/controllers/home-controller.js"></script>
+    <script type="text/javascript" src="../app/js/controllers/java-controller.js"></script>
+    <script type="text/javascript" src="../app/js/controllers/android-controller.js"></script>
+    <script type="text/javascript" src="../app/js/services/homeServices.js"></script>
+
+</head>
+<body ng-controller="Ctrl">
+    <header class="clearfix">
+        <div class="headerwrapper">
+            <!-- <div class="logo FL">
+                <img src="../app/images/logo.png">
+            </div> -->
+                <ul class="FL menu">
+                    <li ng-repeat="item in menuItems">
+                        <a href="#/{{item.href}}" class="{{item.isActive}}">{{item.name}}</a>
+                    </li>
+                </ul>
+            <div id="notification-panel"><toaster-container toaster-options="{
+              'closeButton': false,
+              'debug': false,
+              'positionClass': 'toast-top-right',
+              'onclick': null,
+              'showDuration': '200',
+              'hideDuration': '1000',
+              'timeOut': '5000',
+              'extendedTimeOut': '1000',
+              'showEasing': 'swing',
+              'hideEasing': 'linear',
+              'showMethod': 'fadeIn',
+              'hideMethod': 'fadeOut'
+            }"></toaster-container></div>
+            <!--<div class="FR logout"><a href="logout">logout</a> </div> -->
+            <div class="FR hide"><input type="text" id="autocomplete" ng-model="autocomplete" class="form-control ng-pristine ng-valid"> </div>
+        </div>
+    </header>
+
+    <ng-view>
+        <!-- Your dynamic content from partials will be pasted here -->
+    </ng-view>
+  <div id="footerNew">
+      <p class="FL-noMargin">Running on Flask's Werkzeug server. Go easy !</p>
+      <p class="FR">No Copyrights. None of the rights are reserved.</p>
+  </div>
+
+</body>
+</html>

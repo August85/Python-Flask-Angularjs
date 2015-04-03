@@ -1,0 +1,9 @@
+Flask-RESTful==0.2.12
+Flask-WTF==0.10.0
+MarkupSafe==0.23
+WTForms==2.0.1
+WTForms-Alchemy==0.12.8
+WTForms-Components==0.9.5
+Werkzeug==0.9.6
+decorator==3.4.0
+PyYAML==3.11

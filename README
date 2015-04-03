@@ -1,0 +1,8 @@
+This sample flask project uses Flask, Angular.js and Python together for a small
+MVC type application.
+
+How to Run:
+
+    python pythonapp/server/app/run.py
+
+
